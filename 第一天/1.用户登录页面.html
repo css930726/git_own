@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/login_bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .logo {
+      margin-top: 10px;
+    }
+
+    .panel {
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -150px;
+      margin-left: -200px;
+    }
+
+    .panel-heading {
+      height: 60px;
+      background: url(../images/login_title.png) no-repeat center;
+    }
+
+    .panel-success>.panel-heading {
+      background-color: #ffffff;
+    }
+
+    .form-group {
+      padding: 6px;
+    }
+
+    .item {
+      position: relative;
+    }
+
+    .item input {
+      text-indent: 20px;
+    }
+
+    .glyphicon-user,
+    .glyphicon-lock {
+      color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      padding: 10px 0px 0px 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- logo -->
+    <img class="logo" src="./images/logo.png" alt="">
+
+    <!-- 登录框 -->
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+      </div>
+      <div class="panel-body">
+        <!-- 登录框表单 -->
+        <form id="login_form" class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-12 item">
+              <input type="text" class="form-control" id="username" name="username" required placeholder="请输入用户名">
+              <!-- 用户图标 -->
+              <i class="glyphicon glyphicon-user"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12 item">
+              <input type="password" class="form-control" id="password" name="password" required placeholder="请输入密码">
+              <!-- 密码图标 -->
+              <i class="glyphicon glyphicon-lock"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button type="submit" id="login" class="btn btn-success btn-block">登录</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片上传</title>
+    <script>
+        // 上传图片的方法
+        function upload() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('post', 'http://127.0.0.1:3001/uploadFile');
+            // 注意！因为发送formdata数据，会以multipart/form-data作为content-type，所以不需要再进行设置
+            // xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+            xhr.onload = function() {
+                const jRes = JSON.parse(xhr.responseText);
+                // 图片回显
+                const path = 'http://127.0.0.1:3001/' + jRes.src;
+                document.querySelector('#displayImage').src = path;
+            }
+            xhr.upload.onprogress = function(event) {
+                console.log(event)
+            }
+            // 获取图片
+            const file = document.querySelector('#uploadImg').files['0'];
+            // 创建formdata对象，把文件的二进制流添加到对象中
+            const formdata = new FormData();
+            formdata.append('avatar', file)
+            // 发送二进制给服务端
+            xhr.send(formdata);
+
+        }
+    </script>
+</head>
+<body>
+     请选择图片：<input multiple type="file" id="uploadImg" onchange="upload()">
+     <img id="displayImage" />
+</body>
+</html>

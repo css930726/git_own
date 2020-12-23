@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "tom",
+    "age": 18,
+    "gender": "男",
+    "zhuanye": "前端",
+    "address": "天河区"
+  },
+  {
+    "id": 2,
+    "name": "rose",
+    "age": 19,
+    "gender": "女",
+    "zhuanye": "大数据",
+    "address": "黄埔区"
+  },
+  {
+    "id": 3,
+    "name": "jerry",
+    "age": 20,
+    "gender": "男",
+    "zhuanye": "PHP",
+    "address": "越秀区"
+  },
+  {
+    "id": 4,
+    "name": "jodan",
+    "age": 21,
+    "gender": "男",
+    "zhuanye": "ruby",
+    "address": "白云区"
+  },
+  {
+    "id": 5,
+    "name": "jack",
+    "age": 22,
+    "gender": "男",
+    "zhuanye": "java",
+    "address": "增城市"
+  },
+  {
+    "id": 6,
+    "name": "kitty",
+    "age": 23,
+    "gender": "女",
+    "zhuanye": "python",
+    "address": "东莞"
+  }
+]

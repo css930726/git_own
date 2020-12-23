@@ -1,0 +1,87 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: rgb(245, 245, 245)
+}
+.main {
+    width: 1230px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+}
+.product-img {
+    width: 560px;
+    height: 560px;
+}
+.product-img img {
+    width: 100%;
+}
+.product-info {
+    margin-left: 60px;
+}
+.product-info .title {
+    color: #212121;
+    font-weight: bold;
+    font-size: 26px;
+}
+.product-info .sub-title {
+    color: #B0B0B0;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.product-info .seller {
+    font-size: 14px;
+    color: #FF6700;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+.product-info .price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-info .price .member {
+    color: #FF6700;
+    font-size: 21px;
+    font-weight: bold;
+}
+.product-info .price .market {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #B0B0B0;
+    margin-left: 18px;
+}
+.address-container {
+    width: 578px;
+    height: 124px;
+    background: #FAFAFA;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 31px;
+    margin: 40px 0;
+}
+.address-container .address .detail {
+    font-size: 19px;
+}
+.address-container .address .action {
+    color: #FF6700;
+    margin-left: 24px;
+}
+.address-container .sock {
+    margin-top: 8px;
+    color: #FF6700;
+}
+.buy-now {
+    background: #FF6700;
+    width: 264px;
+    height: 60px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

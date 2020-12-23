@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- 这是我们自己定义的一个XML文件 -->
+<root>
+  <items>
+    <item>
+      <id>1</id>
+      <name>tom</name>
+      <age>18</age>
+      <gender>男</gender>
+      <zhuanye>前端</zhuanye>
+      <address>天河区</address>
+    </item>
+    <item>
+      <id>2</id>
+      <name>jack</name>
+      <age>19</age>
+      <gender>男</gender>
+      <zhuanye>java</zhuanye>
+      <address>越秀区</address>
+    </item>
+    <item>
+      <id>3</id>
+      <name>rose</name>
+      <age>20</age>
+      <gender>女</gender>
+      <zhuanye>UI设计</zhuanye>
+      <address>黄埔区</address>
+    </item>
+    <item>
+      <id>4</id>
+      <name>kitty</name>
+      <age>21</age>
+      <gender>女</gender>
+      <zhuanye>自媒体</zhuanye>
+      <address>白云区</address>
+    </item>
+    <item>
+      <id>5</id>
+      <name>kitty1</name>
+      <age>21</age>
+      <gender>女</gender>
+      <zhuanye>自媒体</zhuanye>
+      <address>白云区</address>
+    </item>
+    <item>
+      <id>6</id>
+      <name>kitty2</name>
+      <age>21</age>
+      <gender>女</gender>
+      <zhuanye>自媒体</zhuanye>
+      <address>白云区</address>
+    </item>
+  </items>
+</root>
